@@ -20,3 +20,7 @@ def activate():
 ROOT = path.dirname(path.abspath(inspect.stack()[0][1]))
 if ROOT not in sys.path:
     sys.path.insert(1, ROOT)
+
+
+if __name__ == '__main__':
+    activate()
