@@ -20,3 +20,8 @@ class Constant():
 
     def __repr__(self):
         return self.x
+
+
+def constants(namespace, names):
+    for name in names:
+        namespace[name] = Constant(name)
