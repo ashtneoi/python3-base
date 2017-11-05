@@ -15,11 +15,11 @@ def cached_property(f):
 
 
 class Constant():
-    def __init__(self, x):
-        self.x = x
+    def __init__(self, name):
+        self.name = name
 
     def __repr__(self):
-        return self.x
+        return self.name
 
 
 def constants(namespace, names):
